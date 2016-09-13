@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = function greet(name) {
-  return 'hello ' + name;
+  console.log(`hello ${name}`);
+  return `hello ${name}`;
 };
