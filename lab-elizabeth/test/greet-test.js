@@ -8,4 +8,9 @@ describe('testing greet.js module', function(){
     var result = greet('lizzie');
     assert.equal(result, 'hello lizzie', 'expected "hello lizzie"');
   });
+  it('should throw error for missing input', function(){
+    assert.throws(function(){
+      greet();
+    }, 'expected missing name error');
+  });
 });
